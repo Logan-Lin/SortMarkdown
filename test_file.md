@@ -28,7 +28,7 @@
 1. Aesthetic is used to talk about beauty or art, and people’s appreciation of beautiful things.
 
 > - He responded very strongly to the aesthetic of this particular work.
-> - … products chosen for their aesthetic appeal as well as their durability and queality.
+> - … products chosen for their aesthetic appeal as well as their durability and quality.
 
 ### peripheral
 
@@ -44,7 +44,6 @@
 1. Someone who gives advice about problems
 2. Someone who has supervisory duties at a summer camp
 3. A lawyer who pleads cases in court
-
 
 > - The counselor bilked his clients out of $2 million.
 > - A hero celebrated as en elderly and wise counselor to the Greeks at Troy.
