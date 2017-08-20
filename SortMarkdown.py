@@ -4,6 +4,8 @@ import sys
 def direct_sort(markdown_strings, output_filename):
     output_file = open(output_filename + ".md", "w")
     lines = markdown_strings.split('\n')
+    if lines[len(lines) - 1] is not '':
+        lines.append('')
     header_indexes = find_all(lines, '###')
     headers = []
     output_file.write(lines[0] + '\n' + lines[1])
@@ -45,7 +47,9 @@ def find_all(string_array, sub_string):
 
 
 output_name = 'output'
-input_name = sys.argv[1]
+input_name = 'input'
+if len(sys.argv) > 1:
+    input_name = sys.argv[1]
 if len(sys.argv) > 2:
     output_name = sys.argv[2]
 result = file_sort(input_name, output_name)

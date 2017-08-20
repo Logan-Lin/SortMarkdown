@@ -24,4 +24,8 @@ That format is what I used to take English notes:
     
 This program can sort these vocabularies based on its headers (start with `###`)
 
-You can use command line argument to indicate input and output file name.
+You can use command line argument to indicate input and output file name. Standard format is like:
+
+    python SortMarkdown.py <input_filename> <output_filename>
+
+Default input filename is 'input', and out filename is 'output'.
