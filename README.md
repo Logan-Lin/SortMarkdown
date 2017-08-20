@@ -1,8 +1,8 @@
 # Sort markdown files
 
-This is just a tiny program that can only sort a specific format of markdown files that I used.
+This is just a tiny program that can sort Markdown files using header tags ('#')
 
-That format is what I used to take English notes:
+For example, this format is what I used to take English notes:
 
     # Hard to remember words
     
@@ -24,8 +24,9 @@ That format is what I used to take English notes:
     
 This program can sort these vocabularies based on its headers (start with `###`)
 
-You can use command line argument to indicate input and output file name. Standard format is like:
+You can use command line argument to indicate input, output file name and 
+how many '#' your header tag have.. Standard format is like:
 
-    python SortMarkdown.py <input_filename> <output_filename>
+    python SortMarkdown.py --input <input_filename> --output <output_filename> --header 2
 
-Default input filename is 'input', and out filename is 'output'.
+Default input filename is 'input', output filename is 'output', and header tag number is '3'.
