@@ -1,5 +1,7 @@
 # Sort markdown files
 
+## Introduce
+
 This is just a tiny program that can sort Markdown files using header tags ('#')
 
 For example, this format is what I used to take English notes:
@@ -22,7 +24,41 @@ For example, this format is what I used to take English notes:
     > - His audience consists predominantly of groups of rugby-club revealers.
     > - Although it is predominantly a teenage problem, acne can occur in early childhood…
     
-This program can sort these vocabularies based on its headers (start with `###`)
+This program can sort these vocabularies based on its headers (start with `###`).
+    
+File structure before sorting:
+
+    # ...
+    
+    ### vigorous
+    
+    vigorous block
+    
+    ### predominantly
+    
+    predominantely block
+    
+    ### debris
+    
+    debris block
+    
+File structure after sorting:
+
+    # ...
+    
+    ### debris
+    
+    debris block
+    
+    ### predominantly
+    
+    predominantly block
+    
+    ### vigorous
+    
+    vigorous block
+
+## Usage
 
 You can use command line argument to indicate input, output file name and 
 how many '#' your header tag have.. Standard format is like:
