@@ -23,3 +23,5 @@ That format is what I used to take English notes:
     > - Although it is predominantly a teenage problem, acne can occur in early childhood…
     
 This program can sort these vocabularies based on its headers (start with `###`)
+
+You can use command line argument to indicate input and output file name.

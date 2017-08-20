@@ -24,6 +24,8 @@ def direct_sort(markdown_strings, output_filename):
 
 def file_sort(input_filename, output_filename):
     file = open(input_filename + ".md", "r")
+    if file is None:
+        return False
     strings = ''
     line = file.readline()
     while line != '':
@@ -31,14 +33,23 @@ def file_sort(input_filename, output_filename):
         line = file.readline()
     direct_sort(strings, output_filename)
     file.close()
+    return True
 
 
 def find_all(string_array, sub_string):
-    result = []
+    indexes = []
     for i in range(len(string_array)):
         if string_array[i].find(sub_string) != -1:
-            result.append(i)
-    return result
+            indexes.append(i)
+    return indexes
 
 
-file_sort("test_file", "output")
+output_name = 'output'
+input_name = sys.argv[1]
+if len(sys.argv) > 2:
+    output_name = sys.argv[2]
+result = file_sort(input_name, output_name)
+if result is True:
+    print("Sort success! Sorted markdown file is saved to " + output_name + ".md")
+else:
+    print("Sort failed.")
